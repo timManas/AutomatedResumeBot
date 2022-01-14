@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1503291557,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat stepDefinitions.HomePageSteps.i_access_indeed_homepage(HomePageSteps.java:13)\n\tat ✽.Given I access indeed homepage(src/test/java/resources/features/Apply.feature:4)\n",
+              "status": "pending"
+            },
+            "line": 4,
+            "name": "I access indeed homepage",
+            "match": {
+              "location": "HomePageSteps.i_access_indeed_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3201528863,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHook.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Find a Job",
+        "description": "",
+        "id": "apply-for-jobs;find-a-job",
+        "after": [
+          {
+            "result": {
+              "duration": 492959545,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHook.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User clicks on Search Button",
+            "match": {
+              "location": "HomePageSteps.user_clicks_on_Search_Button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User is taken to Page",
+            "match": {
+              "location": "HomePageSteps.user_is_taken_to_Page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Apply for Jobs",
+    "description": "",
+    "id": "apply-for-jobs",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/features/Apply.feature"
+  }
+]
