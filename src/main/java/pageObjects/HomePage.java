@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
-	public @FindBy(xpath="//*[@id=\"jobsearch\"]/div/div[1]/div/div[1]") WebElement jobTitleInputField;
-	public @FindBy(xpath="//*[@id=\"jobsearch\"]/div/div[2]/div/div[1]/div") WebElement locationInputField;
+	public @FindBy(xpath="//*[@id=\"text-input-what\"]") WebElement jobTitleInputField;
+	public @FindBy(xpath="//*[@id=\"text-input-where\"]") WebElement locationInputField;
 	public @FindBy(xpath="//*[@id=\"jobsearch\"]/button") WebElement findJobBtn;
 	
 

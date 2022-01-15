@@ -5,5 +5,5 @@ Background:
 	
 Scenario: Find a Job
 	Given User enters job "Automation Engineer" in Job Title
-	Then User enters "Toronto, ON" in Location field
+#	Then User enters "Toronto, ON" in Location field
 	Then User clicks Find Jobs Button
