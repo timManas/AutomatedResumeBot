@@ -1,8 +1,9 @@
 Feature: Apply for Jobs
 
 Background: 
-	Given I access indeed homepage
+	Given User goes indeed homepage
 	
 Scenario: Find a Job
-	Given User clicks on Search Button
-	Then User is taken to Page
+	Given User enters job "Automation Engineer" in Job Title
+	Then User enters "Toronto, ON" in Location field
+	Then User clicks Find Jobs Button
