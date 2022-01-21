@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3259508542,
+  "duration": 3612437381,
   "status": "passed"
 });
 formatter.background({
@@ -36,7 +36,7 @@ formatter.match({
   "location": "HomePageSteps.user_goes_indeed_homepage()"
 });
 formatter.result({
-  "duration": 1535512909,
+  "duration": 2092626138,
   "status": "passed"
 });
 formatter.match({
@@ -49,14 +49,14 @@ formatter.match({
   "location": "HomePageSteps.user_enters_job_in_Job_Title(String)"
 });
 formatter.result({
-  "duration": 622763326,
+  "duration": 815102870,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_clicks_Find_Jobs_Button()"
 });
 formatter.result({
-  "duration": 1467660427,
+  "duration": 2774884090,
   "status": "passed"
 });
 formatter.scenario({
@@ -96,39 +96,40 @@ formatter.match({
   "location": "JobListPageSteps.user_sorts_by_date()"
 });
 formatter.result({
-  "duration": 4985234140,
+  "duration": 4155995905,
   "status": "passed"
 });
 formatter.match({
   "location": "JobListPageSteps.searchelements()"
 });
 formatter.result({
-  "duration": 149167012,
+  "duration": 81226148,
   "status": "passed"
 });
 formatter.match({
   "location": "JobListPageSteps.search_for_Easy_Apply_Button()"
 });
 formatter.result({
-  "duration": 966175997,
+  "duration": 476105852,
   "status": "passed"
 });
 formatter.match({
   "location": "JobListPageSteps.click_Apply_Now_Button()"
 });
 formatter.result({
-  "duration": 46388,
-  "status": "passed"
+  "duration": 24959459,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#indeedApplyButton\"}\n  (Session info: chrome\u003d97.0.4692.71)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Tims-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:10f9:ea1:6e22:b9c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_292\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/gg/63j0ftcx6s5...}, goog:chromeOptions: {debuggerAddress: localhost:50334}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: edcf92488e6ffbdebd6ce285390eae78\n*** Element info: {Using\u003did, value\u003dindeedApplyButton}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat pageObjects.JobListPage.clickOnApplyNowButton(JobListPage.java:41)\n\tat stepDefinitions.JobListPageSteps.click_Apply_Now_Button(JobListPageSteps.java:22)\n\tat ✽.Given Click Apply Now Button(src/test/java/resources/features/Apply.feature:12)\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "JobListPageSteps.apply_Job()"
 });
 formatter.result({
-  "duration": 41495,
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 105018,
+  "duration": 1388390847,
   "status": "passed"
 });
 });

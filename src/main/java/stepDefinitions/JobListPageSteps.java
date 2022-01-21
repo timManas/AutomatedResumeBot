@@ -19,7 +19,7 @@ public class JobListPageSteps extends DriverFactory {
 
 	@Given("^Click Apply Now Button$")
 	public void click_Apply_Now_Button() throws Throwable {
-
+		jobListPage.clickOnApplyNowButton();
 	}
 
 	@Then("^Apply Job$")

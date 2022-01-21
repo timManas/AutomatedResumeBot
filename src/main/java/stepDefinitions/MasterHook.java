@@ -10,6 +10,8 @@ import cucumber.api.java.Before;
 
 public class MasterHook extends DriverFactory {
 	
+	boolean debugMode = true;
+	
 	@Before
 	public void setup() {
 		driver = getDriver();
@@ -23,11 +25,11 @@ public class MasterHook extends DriverFactory {
 				scenario.embed(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES), "image/png");
 			}
 
-//			if (driver != null) {
-//				driver.manage().deleteAllCookies();
-//				driver.quit();
-//				driver = null;
-//			}
+			if (!debugMode && driver != null) {
+				driver.manage().deleteAllCookies();
+				driver.quit();
+				driver = null;
+			}
 
 		} catch (
 
