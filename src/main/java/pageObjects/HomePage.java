@@ -20,18 +20,21 @@ public class HomePage extends BasePage {
 		return new HomePage();
 	}
 
-	public void enterJobInTitle(String arg1) throws Exception {
+	public HomePage enterJobInTitle(String arg1) throws Exception {
 		sendKeysToWebElement(jobTitleInputField, arg1);
+		return new HomePage();
 	}
 	
 
-	public void enterLocation(String arg1) throws Exception {
+	public HomePage enterLocation(String arg1) throws Exception {
 		sendKeysToWebElement(locationInputField, arg1);
+		return new HomePage();
 
 	}
 
-	public void clickFindJobButton() throws InterruptedException {
+	public HomePage clickFindJobButton() throws Exception {
 		waitAndClickElement(findJobBtn);
+		return new HomePage();
 	}
 
 

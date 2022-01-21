@@ -13,12 +13,13 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import pageObjects.HomePage;
-
+import pageObjects.JobListPage;
 import utils.Constants;
 
 public class DriverFactory {
 	public static WebDriver driver;
 	public static HomePage homePage;
+	public static JobListPage jobListPage;
 
 	public WebDriver getDriver() {
 		try {
@@ -82,6 +83,7 @@ public class DriverFactory {
 		} finally {
 			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 			homePage = PageFactory.initElements(driver, HomePage.class);
+			jobListPage = PageFactory.initElements(driver, JobListPage.class);
 		}
 		return driver;
 	}

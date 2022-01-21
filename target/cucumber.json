@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1391362831,
+              "duration": 1535512909,
               "status": "passed"
             },
             "line": 4,
@@ -20,45 +20,13 @@
               "location": "HomePageSteps.user_goes_indeed_homepage()"
             },
             "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "before": [
+          },
           {
             "result": {
-              "duration": 2901406555,
+              "duration": 622763326,
               "status": "passed"
             },
-            "match": {
-              "location": "MasterHook.setup()"
-            }
-          }
-        ],
-        "line": 6,
-        "name": "Find a Job",
-        "description": "",
-        "id": "apply-for-jobs;find-a-job",
-        "after": [
-          {
-            "result": {
-              "duration": 647941522,
-              "status": "passed"
-            },
-            "match": {
-              "location": "MasterHook.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 611800459,
-              "status": "passed"
-            },
-            "line": 7,
+            "line": 5,
             "name": "User enters job \"Automation Engineer\" in Job Title",
             "match": {
               "arguments": [
@@ -73,19 +41,105 @@
           },
           {
             "result": {
-              "duration": 1414387571,
+              "duration": 1467660427,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 8,
-                "value": "#\tThen User enters \"Toronto, ON\" in Location field"
-              }
-            ],
-            "line": 9,
+            "line": 6,
             "name": "User clicks Find Jobs Button",
             "match": {
               "location": "HomePageSteps.user_clicks_Find_Jobs_Button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3259508542,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHook.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Find a Job",
+        "description": "",
+        "id": "apply-for-jobs;find-a-job",
+        "after": [
+          {
+            "result": {
+              "duration": 105018,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHook.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4985234140,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User sorts by date",
+            "match": {
+              "location": "JobListPageSteps.user_sorts_by_date()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 149167012,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "SearchElements",
+            "match": {
+              "location": "JobListPageSteps.searchelements()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 966175997,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Search for Easy Apply Button",
+            "match": {
+              "location": "JobListPageSteps.search_for_Easy_Apply_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46388,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click Apply Now Button",
+            "match": {
+              "location": "JobListPageSteps.click_Apply_Now_Button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 41495,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Apply Job",
+            "match": {
+              "location": "JobListPageSteps.apply_Job()"
             },
             "keyword": "Then "
           }

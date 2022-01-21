@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2901406555,
+  "duration": 3259508542,
   "status": "passed"
 });
 formatter.background({
@@ -22,36 +22,22 @@ formatter.step({
   "name": "User goes indeed homepage",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "HomePageSteps.user_goes_indeed_homepage()"
-});
-formatter.result({
-  "duration": 1391362831,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 6,
-  "name": "Find a Job",
-  "description": "",
-  "id": "apply-for-jobs;find-a-job",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
 formatter.step({
-  "line": 7,
+  "line": 5,
   "name": "User enters job \"Automation Engineer\" in Job Title",
   "keyword": "Given "
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 8,
-      "value": "#\tThen User enters \"Toronto, ON\" in Location field"
-    }
-  ],
-  "line": 9,
+  "line": 6,
   "name": "User clicks Find Jobs Button",
   "keyword": "Then "
+});
+formatter.match({
+  "location": "HomePageSteps.user_goes_indeed_homepage()"
+});
+formatter.result({
+  "duration": 1535512909,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -63,18 +49,86 @@ formatter.match({
   "location": "HomePageSteps.user_enters_job_in_Job_Title(String)"
 });
 formatter.result({
-  "duration": 611800459,
+  "duration": 622763326,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_clicks_Find_Jobs_Button()"
 });
 formatter.result({
-  "duration": 1414387571,
+  "duration": 1467660427,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 8,
+  "name": "Find a Job",
+  "description": "",
+  "id": "apply-for-jobs;find-a-job",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 9,
+  "name": "User sorts by date",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 10,
+  "name": "SearchElements",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "Search for Easy Apply Button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "Click Apply Now Button",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 13,
+  "name": "Apply Job",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "JobListPageSteps.user_sorts_by_date()"
+});
+formatter.result({
+  "duration": 4985234140,
+  "status": "passed"
+});
+formatter.match({
+  "location": "JobListPageSteps.searchelements()"
+});
+formatter.result({
+  "duration": 149167012,
+  "status": "passed"
+});
+formatter.match({
+  "location": "JobListPageSteps.search_for_Easy_Apply_Button()"
+});
+formatter.result({
+  "duration": 966175997,
+  "status": "passed"
+});
+formatter.match({
+  "location": "JobListPageSteps.click_Apply_Now_Button()"
+});
+formatter.result({
+  "duration": 46388,
+  "status": "passed"
+});
+formatter.match({
+  "location": "JobListPageSteps.apply_Job()"
+});
+formatter.result({
+  "duration": 41495,
   "status": "passed"
 });
 formatter.after({
-  "duration": 647941522,
+  "duration": 105018,
   "status": "passed"
 });
 });
