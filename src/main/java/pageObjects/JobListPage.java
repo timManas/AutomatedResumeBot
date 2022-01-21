@@ -62,6 +62,9 @@ public class JobListPage extends BasePage{
 
 		writer.close();
 		
+		WebElement applyNowButton = driver.findElement(By.id("indeedApplyButton"));
+		applyNowButton.click();
+		
 		
 //		System.out.println("PageSource: " + driver.getPageSource());
 //		System.out.println("isDisplayed: " + indeedApplyButton.isDisplayed());
