@@ -10,6 +10,9 @@ Scenario: Find a Job
 	When SearchElements
 	Then Search for Easy Apply Button
 	Given Click Apply Now Button
+	When Enter Credentials
+	Then Enter Password
+	Then Click SignIn Button
 	Then Apply Job
 	
 	

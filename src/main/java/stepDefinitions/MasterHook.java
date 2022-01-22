@@ -10,7 +10,7 @@ import cucumber.api.java.Before;
 
 public class MasterHook extends DriverFactory {
 	
-	boolean debugMode = true;
+	boolean debugMode = false;
 	
 	@Before
 	public void setup() {
