@@ -25,6 +25,7 @@ public class JobListPage extends BasePage{
 	}
 ;
 	public void sortByDate() throws InterruptedException {
+		Thread.sleep(3000);
 		// Click on SortByDate
 		waitAndClickElement(sortByDate);
 	}
@@ -33,6 +34,7 @@ public class JobListPage extends BasePage{
 		if (popOverX.isDisplayed()) {
 			waitAndClickElement(popOverX);
 		}
+		Thread.sleep(3000);
 		waitAndClickElement(easilyApplyToJob);
 	}
 
@@ -42,6 +44,7 @@ public class JobListPage extends BasePage{
 	}
 	
 	public void clickOnApplyNowButton() throws InterruptedException, FileNotFoundException, UnsupportedEncodingException {
+		Thread.sleep(3000);
 		
 		driver.navigate().refresh();
 		

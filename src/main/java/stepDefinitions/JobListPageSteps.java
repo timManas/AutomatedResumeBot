@@ -22,10 +22,6 @@ public class JobListPageSteps extends DriverFactory {
 		jobListPage.clickOnApplyNowButton();
 	}
 
-	@Then("^Apply Job$")
-	public void apply_Job() throws Throwable {
-
-	}
 	
 	@When("^SearchElements$")
 	public void searchelements() throws Throwable {

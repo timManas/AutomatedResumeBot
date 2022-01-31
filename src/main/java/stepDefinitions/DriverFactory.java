@@ -12,6 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import pageObjects.ApplicationPage;
 import pageObjects.HomePage;
 import pageObjects.JobListPage;
 import pageObjects.LoginPage;
@@ -22,6 +23,7 @@ public class DriverFactory {
 	public static HomePage homePage;
 	public static JobListPage jobListPage;
 	public static LoginPage loginPage;
+	public static ApplicationPage applicationPage;
 
 	public WebDriver getDriver() {
 		try {
@@ -87,6 +89,7 @@ public class DriverFactory {
 			homePage = PageFactory.initElements(driver, HomePage.class);
 			jobListPage = PageFactory.initElements(driver, JobListPage.class);
 			loginPage = PageFactory.initElements(driver, LoginPage.class);
+			applicationPage = PageFactory.initElements(driver, ApplicationPage.class);
 		}
 		return driver;
 	}

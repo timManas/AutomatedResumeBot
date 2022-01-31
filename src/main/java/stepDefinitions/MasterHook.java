@@ -10,7 +10,7 @@ import cucumber.api.java.Before;
 
 public class MasterHook extends DriverFactory {
 	
-	boolean debugMode = false;
+	boolean debugMode = true;
 	
 	@Before
 	public void setup() {
@@ -26,7 +26,7 @@ public class MasterHook extends DriverFactory {
 			}
 
 			if (!debugMode && driver != null) {
-				driver.manage().deleteAllCookies();
+//				driver.manage().deleteAllCookies();
 				driver.quit();
 				driver = null;
 			}
